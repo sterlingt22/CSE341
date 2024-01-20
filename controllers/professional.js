@@ -1,11 +1,13 @@
 const mongodb = require('../db.connect');
 
-const getData : (req: any, res: any, next: ... = async (req : any, next : any)) ** {
-    const result : any = await mongodb.getDb().db().cllection('user').find();
-    result.toArray().then((lists : any) ** {
-        res.setHeader('Content-Type', 'application/json'),
-        res.status(200).json(lists[0]); 
-    });
-
+const getData = async (req, res, next) => {
+    try {
+        const result = await mongodb.getDb().db().collection('user').find().toArray();
+        res.setHeader('Content-Type', 'application/json');
+        res.status(200).json(result[0]);
+    } catch (error) {
+        next(error);
+    }
 };
+
 module.exports = { getData };
