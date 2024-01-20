@@ -1,0 +1,23 @@
+// LOCALHOST/
+##
+GET http://localhost:8080/contacts
+##
+GET http://localhost:8080/contacts/65ab01420805048711c119f1
+##
+GET http://localhost:8080/contacts/65ab01420805048711c119f2
+##
+GET http://localhost:8080/contacts/65ab01420805048711c119f3
+##
+GET http://localhost:8080/contacts/65ab01420805048711c119f4
+
+// PRODUCTION Deploy
+###
+GET https://cse341-winter24-0hvu.onrender.com/contacts
+###
+GET https://cse341-winter24-0hvu.onrender.com/contacts/65ab01420805048711c119f1
+###
+GET https://cse341-winter24-0hvu.onrender.com/contacts/65ab01420805048711c119f2
+###
+GET https://cse341-winter24-0hvu.onrender.com/contacts/65ab01420805048711c119f3
+###
+GET https://cse341-winter24-0hvu.onrender.com/contacts/65ab01420805048711c119f4
