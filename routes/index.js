@@ -1,6 +1,6 @@
-const routes = require('express').Router();
-const lesson1Controller = require('../controllers/lesson1');
- 
-routes.use('/contacts', require('./contacts'))
+const express = require('express');
+const router = express.Router();
 
-module.exports = routes;
+router.use('/contacts', require('./contacts'))
+
+module.exports = router;
