@@ -1,11 +1,11 @@
 [
     {
-        "contact": {
-            "firstName": "Juliette",
-            "lastName": "Tucker",
-            "email": "babygirl@cse341.com",
-            "favoriteColor": "magenta",
-            "birthday": "11/02/15"
+    "contact": {
+        "firstName": "Juliette",
+        "lastName": "Tucker",
+        "email": "babygirl@cse341.com",
+        "favoriteColor": "magenta",
+        "birthday": "11/02/15"
         }
     },
     {
