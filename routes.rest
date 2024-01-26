@@ -1,14 +1,14 @@
 // LOCALHOST/
 ###
-GET http://localhost:8080/contacts 
+GET http://localhost:3000/contacts 
 ###
-GET http://localhost:8080/contacts/65ab01420805048711c119f1
+GET http://localhost:3000/contacts/65ab01420805048711c119f1
 ###
-GET http://localhost:8080/contacts/65ab01420805048711c119f2
+GET http://localhost:3000/contacts/65ab01420805048711c119f2
 ###
-GET http://localhost:8080/contacts/65ab01420805048711c119f3
+GET http://localhost:3000/contacts/65ab01420805048711c119f3
 ###
-GET http://localhost:8080/contacts/65ab01420805048711c119f4
+GET http://localhost:3000/contacts/65ab01420805048711c119f4
 
 // PRODUCTION Deploy
 ###
