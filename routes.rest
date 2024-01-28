@@ -32,15 +32,22 @@ content-type: application/json
   "contact": {
     "firstName": "Juliette",
     "lastName": "Tucker",
-    "email": "babygirl@cse341.com",
-    "favoriteColor": "magenta",
-    "birthday": "11/02/15"
+    "email": "babygirl2@cse341.com",
+    "favoriteColor": "blue",
+    "birthday": "10/02/15"
   }
 }
 
 ### DELETE contact 
 DELETE http://loclahost:3000/contacts/65ab01420805048711c119f3 HTTP/1.1
 
+{
+    "firstName": "Zad",
+    "lastName": "Ford",
+    "email": "zFord@test.com",
+    "favoriteColor":"Blue",
+    "birthday":"02/15/1975"
+}
 
 // PRODUCTION Deploy
 ### Get all contacts 
