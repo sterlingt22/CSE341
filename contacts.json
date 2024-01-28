@@ -34,15 +34,9 @@
         "favoriteColor": "red",
         "birthday": "12/16/19"
         }
-    },
-
-    {
-        "firstName": "Zad",
-        "lastName": "Ford",
-        "email": "zFord@test.com",
-        "favoriteColor":"Blue",
-        "birthday":"02/15/1975"
     }
+
+
 ]
    
  
