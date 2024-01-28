@@ -71,14 +71,13 @@ PUT http://localhost:3000/contacts/65ab01420805048711c119f1 HTTP/1.1
 content-type: application/json
 
 {
-  "_id": "65ab01420805048711c119f1",
-  "contact": {
+  
     "firstName": "Juliette",
     "lastName": "Tucker",
     "email": "babygirl@cse341.com",
     "favoriteColor": "blue",
     "birthday": "10/02/15"
-  }
+  
 }
 
 ### DELETE contact 
