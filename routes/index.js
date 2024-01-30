@@ -8,7 +8,7 @@ express.use(
   '/',
   (docData = (req, res) => {
     let docData = {
-      documentationURL: 'https://sterlingtucker.github.io/sterling-byui-api-docs',
+      documentationURL: 'https://github.com/sterlingt22/CSE341.git',
     };
     res.send(docData);
   })
