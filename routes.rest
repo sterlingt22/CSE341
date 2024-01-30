@@ -37,7 +37,7 @@ content-type: application/json
   }
 
 ### DELETE contact 
-DELETE http://localhost:3000/contacts/65b5c7ce0abcb3962a306a00 HTTP/1.1
+DELETE http://localhost:3000/contacts/65b71b13ebef9c851f235ef2 HTTP/1.1
 
 
 // PRODUCTION Deploy
@@ -75,10 +75,10 @@ content-type: application/json
     "firstName": "Juliette",
     "lastName": "Tucker",
     "email": "babygirl@cse341.com",
-    "favoriteColor": "blue",
-    "birthday": "10/02/15"
+    "favoriteColor": "magenta",
+    "birthday": "11/02/15"
   
 }
 
 ### DELETE contact 
-DELETE http://localhost:3000/contacts/65b5c7ce0abcb3962a306a00 HTTP/1.1
+DELETE http://localhost:3000/contacts/65b71bc863e2dc263c3d806f HTTP/1.1
