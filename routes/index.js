@@ -8,7 +8,7 @@ express.use(
   '/',
   (docData = (req, res) => {
     let docData = {
-      documentationURL: 'https://github.com/sterlingt22/CSE341.git',
+      documentationURL: 'https://github.com/sterlingt22/temple-api.git',
     };
     res.send(docData);
   })
