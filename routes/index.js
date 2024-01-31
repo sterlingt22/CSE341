@@ -1,4 +1,4 @@
-const express = require('express').Router();
+const routes = require('express').Router();
 const templeRoutes = require('./temple');
 const swaggerRoutes = require('./swagger');
 
