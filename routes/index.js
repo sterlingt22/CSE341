@@ -1,9 +1,8 @@
 const routes = require('express').Router();
-const templeRoutes = require('./temple');
-const swaggerRoutes = require('./swagger');
+const temple = require('./temple');
 
-routes.use('/temples', templeRoutes);
-routes.use('/swagger', swaggerRoutes);
+routes = ('/', require('./swagger'));
+routes.use('/temples', temple);
 routes.use(
   '/',
   (docData = (req, res) => {
