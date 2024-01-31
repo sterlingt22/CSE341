@@ -2,9 +2,9 @@ const express = require('express').Router();
 const templeRoutes = require('./temple');
 const swaggerRoutes = require('./swagger');
 
-express.use('/temples', templeRoutes);
-express.use('/swagger', swaggerRoutes);
-express.use(
+routes.use('/temples', templeRoutes);
+routes.use('/swagger', swaggerRoutes);
+routes.use(
   '/',
   (docData = (req, res) => {
     let docData = {
@@ -14,4 +14,4 @@ express.use(
   })
 );
 
-module.exports = express;
+module.exports = routes;
