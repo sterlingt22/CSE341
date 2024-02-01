@@ -1,4 +1,4 @@
-const mongodb = require('../db/connect');
+const mongodb = require('../../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
@@ -36,7 +36,6 @@ const createContact = async (req, res) => {
 
 const updateContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
-  // be aware of updateOne if you only want to update specific fields
   const contact = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
