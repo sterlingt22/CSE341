@@ -1,0 +1,38 @@
+### GET All Movies ###
+GET http://localhost:3000/movies
+
+### POST New Movie ###
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "Inception",
+    "genre": "Science Fiction",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "rating": 8.8
+}
+
+### GET Single Movie ###
+GET http://localhost:3000/movies/65c48e75f940a690598b582a
+### GET Single Movie ###
+GET http://localhost:3000/movies/65c48e75f940a690598b582b
+### GET Single Movie ###
+GET http://localhost:3000/movies/65c48e75f940a690598b582c
+### GET Single Movie ###
+GET http://localhost:3000/movies/65c48e75f940a690598b582d
+
+### PUT Update Movie ###
+PUT http://localhost:3000/movies/:id
+Content-Type: application/json
+
+{
+    "title": "Inception",
+    "genre": "Science Fiction",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "rating": 9.2
+}
+
+### DELETE Movie ###
+DELETE http://localhost:3000/movies/:id
