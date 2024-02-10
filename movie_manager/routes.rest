@@ -6,11 +6,11 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-    "title": "Inception",
+    "title": "Interstellar",
     "genre": "Science Fiction",
     "director": "Christopher Nolan",
-    "year": 2010,
-    "rating": 8.8
+    "year": 2014,
+    "rating": 8.7
 }
 
 ### GET Single Movie ###
@@ -23,16 +23,16 @@ GET http://localhost:3000/movies/65c48e75f940a690598b582c
 GET http://localhost:3000/movies/65c48e75f940a690598b582d
 
 ### PUT Update Movie ###
-PUT http://localhost:3000/movies/:id
+PUT http://localhost:3000/movies/65c7bafc7545626e519d8506
 Content-Type: application/json
 
 {
-    "title": "Inception",
+    "title": "Interstellar",
     "genre": "Science Fiction",
     "director": "Christopher Nolan",
-    "year": 2010,
-    "rating": 9.2
+    "year": 2014,
+    "rating": 8.7
 }
 
 ### DELETE Movie ###
-DELETE http://localhost:3000/movies/:id
+DELETE http://localhost:3000/movies/65c7bebda464f37bedbe4885

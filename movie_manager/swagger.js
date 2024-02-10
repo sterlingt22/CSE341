@@ -1,28 +1,21 @@
-// swagger.js
+const swaggerAutogen = require('swagger-autogen')();
 
-const swaggerUi = require('swagger-ui-express');
-const swaggerJsdoc = require('swagger-jsdoc');
-
-const options = {
-  definition: {
-    openapi: '3.0.0',
-    info: {
-      title: 'Movie Manager API',
-      version: '1.0.0',
-      description: 'An API for managing movies'
-    },
-    servers: [
-      {
-        url: 'http://localhost:3000',
-        description: 'Development server'
-      }
-    ]
+const doc = {
+  info: {
+    title: 'My API',
+    description: 'movies API',
   },
-  apis: ['./routes/*.js']
+  host: 'localhost:3000',
+  schemes: ['http'],
 };
 
-const specs = swaggerJsdoc(options);
+const outputFile = './swagger.json';
+const endpointsFiles = ['./routes/index.js'];
 
-module.exports = (app) => {
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
-};
+// generate swagger.json
+swaggerAutogen(outputFile, endpointsFiles, doc);
+
+// Run server after it gets generated
+// swaggerAutogen(outputFile, endpointsFiles, doc).then(async () => {
+//   await import('./index.js');
+// });
