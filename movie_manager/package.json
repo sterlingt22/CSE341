@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sterlingt22/CSE341_movies.git"
+        "url": "git+https://github.com/sterlingt22/CSE341/movie_manager.git"
     },
     "author": "",
     "license": "ISC",
