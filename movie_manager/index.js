@@ -10,7 +10,7 @@ app
   .use(cors())
   .use(epress.json())
   .use(express.urlencoded({ extended: true}))
-  .use('/', require('./routes'));
+  .use('/', require('./routes/movies'));
 
 const db = require('./models');
 db.mongoose
